@@ -1,0 +1,15 @@
+module CUnicode [system] [extern_c] {
+
+    module Text {
+        header "utext.h"
+        export *
+    }
+
+    module RegularExpressions {
+        header "uregex.h"
+        export *
+    }
+
+    link "icucore"
+
+}
